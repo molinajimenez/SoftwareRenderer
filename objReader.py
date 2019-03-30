@@ -27,7 +27,7 @@ class objReader(object):
 					self.textVert.append(list(map(float, value.split(" "))))
 				elif prefix == 'f': 
 					#append de una lista que se agrega por cada espacio, cadaa valor de la lista se traduce automaticamente a un valor int :)
-					self.vfaces.append([list(map(int, face.split('//'))) for face in value.split(' ')])
+					self.vfaces.append([list(map(int, face.split('/'))) for face in value.split(' ')])
 
 class objMtl(object):
 	def __init__(self,filename):
